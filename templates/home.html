@@ -1,0 +1,61 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <title>Cosine Similarity by Paolo David</title>
+
+  <p>&nbsp;</p>
+  <h1 class="entry-title" style="text-align: center;">Cosine Similarity</h1>
+  <h1 class="entry-title" style="text-align: center;"><img style="font-size: 14px; font-family: -webkit-standard;" src="http://www.paolodavid.com/wp-content/img/graph.png" alt="" width="56" height="56" />&nbsp;&nbsp;<img src="http://www.paolodavid.com/wp-content/img/ab-testing.png" alt="" width="56" height="56" /></h1>
+  <p style="text-align: center;">A metric used to measure how similar the documents are irrespective of their size.</p>
+  <p style="text-align: center;">Web-app created by Paolo David</p>
+  <p style="text-align: center;"><img src="http://www.paolodavid.com/wp-content/img/github-2.png" alt="" width="26" height="26" />&nbsp;<a href="https://github.com/paolodavid">https://github.com/paolodavid</a></p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form action="submit" id="textform" method="post">
+          <div class="col-sm-9">
+            <div class="form-group  purple-border">
+              <label for="comment">Enter the text of document 1:</label>
+              <textarea class="form-control" rows="5" id="text" name="text" rows="5" cols="60" autofocus>{{text}}</textarea>
+              <!-- <input class="form-control" id="text" type="text" name="text" rows="5" cols="60" value="{{ request.form['text'] }}"/> -->
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <button type="submit" class="btn btn-primary" value="Submit">Save</button>
+          </div>
+        </form>
+      </div>
+      <div class="col">
+        <form action="http://localhost:5000" method="POST">
+          <div class="col-sm-9">
+            <div class="form-group  purple-border">
+              <label for="comment">Enter the text of document 2:</label>
+              <textarea class="form-control" rows="5" id="comment" name="query" rows="5" cols="60" autofocus>{{query}}</textarea>
+            </div>
+          </div>
+          <div class="second">
+            <div class="col-sm-9">
+              <form>
+                <button type="submit" class="btn btn-primary" value="Submit">Compare</button>
+                <input type="reset" value="Clear" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <textarea class="form-control" rows="5" id="comment" name="query" rows="5" cols="50" autofocus>{{output}}</textarea>
+      </div>
+    </div>
+
+  </body>
+  </html>
