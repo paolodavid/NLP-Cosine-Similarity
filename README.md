@@ -1,8 +1,14 @@
-# Text Matching Tool
+# NLP Cosine Similarity
+A metric used to measure how similar the documents are irrespective of their size.
 
-This is basically a Web application of Text Matching using Python-Flask, based on the Cosine Similarity concept
+# Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ohV_MfSESFU/0.jpg)](https://www.youtube.com/watch?v=ohV_MfSESFU)
 
+# Features
+Created using these libraries/framework:
+- Flask 1.1.2
+- Docker
+- Math
 
-# To get started, follow this blog:
-
-https://beingdatum.com/text-matching-using-cosine-similarity-flask-api/
+# Credits
+https://bit.ly/3txvQpV
